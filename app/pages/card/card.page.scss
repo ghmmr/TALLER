@@ -1,0 +1,34 @@
+
+.texto{
+    color:blue;
+    text-align: justify;
+    padding: 10%;
+}
+
+.fondoHeader{
+    background-color:bisque;
+    
+}
+
+.fondoContent{
+    background-color:cornsilk;
+    color:darkgreen;
+    font-weight: bold;
+    text-align: justify;
+    padding:10%;
+}
+
+.colorTitulos{
+    font-weight: bold;
+     
+}
+
+.fondoImg{
+    background-color: cornsilk;
+}
+
+
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}

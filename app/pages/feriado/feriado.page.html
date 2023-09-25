@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu2()">
+        <ion-icon slot="start" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Feriado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="warning">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12"
+      *ngFor="let articulo of datos; let i=index">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle class="ion-text-right" color="dark">
+            <span>{{articulo.date}}</span>
+          </ion-card-subtitle>
+          <br>
+          <ion-card-title class="ion-text-left" color="primary">
+            {{articulo.title}}
+          </ion-card-title>
+          <br>
+          <ion-card-subtitle class="ion-text-center">
+            <span>{{articulo.extra}}</span>
+          </ion-card-subtitle>
+
+          
+        </ion-card-header>
+      </ion-card> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
